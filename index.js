@@ -1,6 +1,10 @@
-var fs = require('fs');
-var rs = fs.createReadStream('./demofile.txt');
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
 
-rs.on('open', function(){
-    console.log('The file is open.');
-});
+var customEventHandler = function(){
+    console.log('I hear a scream!!!');
+};
+
+eventEmitter.on('scream', customEventHandler);
+
+eventEmitter.emit('scream');
