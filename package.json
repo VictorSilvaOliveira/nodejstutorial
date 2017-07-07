@@ -11,5 +11,8 @@
     "tutorial"
   ],
   "author": "Victor Silva de Oliveira",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "upper-case": "^1.1.3"
+  }
 }
