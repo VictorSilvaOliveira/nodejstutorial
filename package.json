@@ -1,0 +1,15 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Tutorial para nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "victor",
+    "tutorial"
+  ],
+  "author": "Victor Silva de Oliveira",
+  "license": "ISC"
+}
