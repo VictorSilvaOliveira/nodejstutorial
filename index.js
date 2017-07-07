@@ -1,13 +1,6 @@
-var http = require('http');
-var date = require('./modules/date');
-var uc = require('upper-case');
-http
-    .createServer(function(req, res){
-        res.writeHead(200, {
-            'Content-Type': 'text/plain'
-        });
+var fs = require('fs');
+var rs = fs.createReadStream('./demofile.txt');
 
-        res.write("the date is " + date);
-        res.end(uc('Hello world'));
-    })
-    .listen(8080);
+rs.on('open', function(){
+    console.log('The file is open.');
+});
